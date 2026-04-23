@@ -1,50 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Privacy Policy</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Pusoan App</title>
     <style>
-        body { font-family: sans-serif; padding: 20px; line-height: 1.6; }
-        h1, h2 { color: #333; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: #e0e0e0;
+            background-color: #121212;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #1e1e1e;
+            padding: 25px;
+            border-radius: 8px;
+        }
+        h1, h2 {
+            color: #fdd835; /* Yellow */
+            border-bottom: 1px solid #444;
+            padding-bottom: 10px;
+        }
+        h1 {
+            text-align: center;
+        }
+        p, li {
+            color: #bdbdbd;
+        }
+        a {
+            color: #fdd835;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        strong {
+            color: #ffffff;
+        }
     </style>
 </head>
 <body>
-    <h1>Privacy Policy for Pusoan App</h1>
-    <p><strong>Last updated:</strong> October 31, 2024</p>
+    <div class="container">
+        <h1>Privacy Policy for Pusoan App</h1>
+        <p><strong>Last updated:</strong> October 31, 2024</p>
 
-    <p>Welcome to Pusoan App! This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application.</p>
+        <p>Welcome to Pusoan App! This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application. Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the application.</p>
 
-    <h2>1. Information We Collect</h2>
-    <p>We may collect information about you in a variety of ways. The information we may collect on the Application includes:</p>
-    <ul>
-        <li><strong>Personal Data:</strong> When you register using Google Sign-In, we collect your name, email address, and profile picture URL as provided by Google. If you register manually, we may ask for your full name and mobile number. This is managed through Firebase Authentication.</li>
-        <li><strong>User-Generated Content:</strong> We collect information you voluntarily provide, such as your Watch History, messages in Pusoan Chat, comments on videos, and answers to surveys.</li>
-        <li><strong>Usage Data:</strong> We use Firebase Analytics to automatically collect information about your device and how you interact with our app (e.g., device type, IP address, features used).</li>
-        <li><strong>Advertising Data:</strong> We use Google AdMob to show ads. AdMob may collect data to provide personalized advertising.</li>
-        <li><strong>Video Playback Data:</strong> Since we use an embedded YouTube player, Google (as the provider of YouTube) may collect data about the videos you watch within our app.</li>
-    </ul>
+        <h2>1. Information We Collect</h2>
+        <p>We may collect information about you in a variety of ways. The information we may collect on the Application includes:</p>
+        <ul>
+            <li><strong>Personal Data:</strong> When you register, we collect personally identifiable information, such as your name, email address, and profile picture, either provided by you or through your Google account. This information is stored securely using Firebase Authentication.</li>
+            <li><strong>User-Generated Content:</strong> We collect and store the messages you send in the Pusoan Chat and comments you post on videos. Your profile picture, if you choose to upload one, is stored using Firebase Storage.</li>
+            <li><strong>Application Usage Data:</strong> We automatically collect data about your interaction with the app, such as your watch history, Pusoan Points balance, and app preferences (like the dark mode setting). This data is stored in our Firebase Firestore database to personalize your experience.</li>
+            <li><strong>Device Data:</strong> Information your device sends automatically, such as your IP address, device type, and operating system.</li>
+        </ul>
 
-    <h2>2. How We Use Your Information</h2>
-    <p>We use the information we collect to:</p>
-    <ul>
-        <li>Create and manage your account.</li>
-        <li>Provide a personalized experience (e.g., showing your name and profile picture).</li>
-        <li>Enable app features like Watch History, Rewards, and Chat.</li>
-        <li>Analyze app usage to monitor performance and improve our services.</li>
-        <li>Display advertisements to support the app.</li>
-    </ul>
+        <h2>2. Use of Your Information</h2>
+        <p>Having accurate information about you permits us to provide you with a smooth, efficient, and customized experience. Specifically, we may use information collected about you to:</p>
+        <ul>
+            <li>Create and manage your account.</li>
+            <li>Personalize your experience, for example, by showing your watch history and maintaining your points balance.</li>
+            <li>Enable user-to-user communication in the chat features.</li>
+            <li>Monitor and analyze usage and trends to improve your experience.</li>
+            <li>Display relevant advertisements through Google AdMob.</li>
+            <li>Fulfill and manage rewards and other transactions related to the Application.</li>
+        </ul>
 
-    <h2>3. Sharing of Your Information</h2>
-    <p>We do not sell your personal information. However, we may share information with third-party service providers that perform services for us or on our behalf, including:</p>
-    <ul>
-        <li><strong>Google:</strong> We share data with Google for services like Firebase (Authentication, Analytics, Firestore), AdMob (advertising), and YouTube (video playback).</li>
-        <li><strong>Shopping Partners (Lazada/Shopee):</strong> If you click a link to shop, you will be redirected to their site or app. Their own privacy policy will apply once you leave our app.</li>
-    </ul>
+        <h2>3. Third-Party Services</h2>
+        <p>We use the following third-party services to operate our app:</p>
+        <ul>
+            <li><strong>Firebase (by Google):</strong> We use Firebase Authentication for account management, Firebase Firestore for our database (storing profile info, points, chat messages, etc.), and Firebase Storage for profile pictures.</li>
+            <li><strong>Google Mobile Ads (AdMob):</strong> To show advertisements within the app.</li>
+            <li><strong>YouTube Data API:</strong> To fetch information about GMA videos and playlists. These services have their own privacy policies, and we encourage you to review them.</li>
+        </ul>
 
-    <h2>4. Security of Your Information</h2>
-    <p>We use administrative, technical, and physical security measures to help protect your personal information. While we have taken reasonable steps to secure the personal information you provide to us, please be aware that no security measure is perfect or impenetrable.</p>
+        <h2>4. Security of Your Information</h2>
+        <p>We use administrative, technical, and physical security measures provided by Google Firebase to help protect your personal information. While we have taken reasonable steps to secure your data, please be aware that no security measures are perfect or impenetrable.</p>
 
-    <h2>5. Contact Us</h2>
-    <p>If you have questions or comments about this Privacy Policy, please contact us at: pusoanapp@gmail.com</p>
+        <h2>5. Data Deletion</h2>
+        <p>You have the right to request the deletion of your account and all associated data. To do so, please send an email to <a href="mailto:pusoanapp@gmail.com">pusoanapp@gmail.com</a> with the subject "Account Deletion Request". We will process your request and delete your data from our systems.</p>
+
+        <h2>6. Children's Privacy</h2>
+        <p>Our service is not intended for use by children under the age of 13. We do not knowingly collect personally identifiable information from children under 13. If we become aware that a child under 13 has provided us with personal information, we will take steps to delete such information.</p>
+
+        <h2>7. Contact Us</h2>
+        <p>If you have questions or comments about this Privacy Policy, please contact us at: <a href="mailto:pusoanapp@gmail.com">pusoanapp@gmail.com</a></p>
+    </div>
 </body>
 </html>
